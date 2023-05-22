@@ -1,0 +1,23 @@
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Capacity</th>
+       
+        
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let stadium of stadiums">
+        <td>{{stadium._id}}</td>
+        <td>{{stadium.name}}</td>
+        <td>{{stadium.city}}</td>
+        <td>{{stadium.capacity}}</td>
+        
+        <td>
+            <button class="btn btn-info" (click)="goToDisplay(stadium._id)">Display</button>
+            <button class="btn btn-warning" (click)="goToEdit(stadium._id)">Edit</button>
+            <button class="btn btn-danger" (click)="deleteStadium(stadium._id)">Delete</button>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,23 @@
+<div class="hero overlay" style="background-image: url('assets/images/bg_3.jpg');">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-9 mx-auto text-center">
+                <h1 class="text-white">Team Info</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="margin-left:45%; margin-top: 5%;" class="container" class="custom-media d-flex">
+    <div class="img mr-4">
+        <div class="img mr-4">
+            <img [src]="player.image" alt="Image" class="img-fluid">
+        </div>
+    </div>
+    <div class="text">
+        <h3 class="mb-4" >Name: {{player.name}}</h3>
+        <h3 ><a href="#"> Position: {{player.position}}</a></h3>
+        <p>Number: {{player.number}}</p>
+        <p>Age: {{player.age}}</p>
+        <p><a href="#">Read more</a></p>
+    </div>
+</div>
