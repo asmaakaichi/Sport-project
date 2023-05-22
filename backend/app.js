@@ -150,7 +150,7 @@ function checkEmail(email, usersTab) {
   }
   return exist;
 }
-//Busniss logic: signup
+//Busniss logic: sign
 app.post("/users/signup", multer({ storage: storageConfig }).single('img'), (req, res) => {
   console.log("Here into BL: signup", req.body);
   bcrypt.hash(req.body.pwd, 8).then((cryptedPwd) => {
